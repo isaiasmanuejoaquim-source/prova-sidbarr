@@ -1,0 +1,1219 @@
+HTML (index.html)
+
+```html
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isaías Manuel | Portfólio CSS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Efeito de Partículas (CSS Puro) -->
+    <div class="particulas">
+        <div class="particula" style="--i:1"></div>
+        <div class="particula" style="--i:2"></div>
+        <div class="particula" style="--i:3"></div>
+        <div class="particula" style="--i:4"></div>
+        <div class="particula" style="--i:5"></div>
+        <div class="particula" style="--i:6"></div>
+        <div class="particula" style="--i:7"></div>
+        <div class="particula" style="--i:8"></div>
+        <div class="particula" style="--i:9"></div>
+        <div class="particula" style="--i:10"></div>
+    </div>
+
+    <!-- Menu Lateral Pessoal -->
+    <nav class="menu-lateral">
+        <div class="perfil">
+            <div class="foto-perfil-container">
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='45' fill='%23667eea'/%3E%3Ccircle cx='50' cy='35' r='15' fill='%23ffffff'/%3E%3Ccircle cx='35' cy='30' r='3' fill='%23333'/%3E%3Ccircle cx='65' cy='30' r='3' fill='%23333'/%3E%3Cpath d='M35 50 Q50 65, 65 50' stroke='%23ffffff' stroke-width='4' fill='none'/%3E%3C/svg%3E" 
+                     alt="Foto de Perfil" 
+                     class="foto-perfil">
+                <span class="status-online"></span>
+            </div>
+            <h3>Isaías Manuel</h3>
+            <p class="cargo">Desenvolvedor Front-end</p>
+            <p class="localizacao">📍 Luanda, Angola</p>
+        </div>
+        
+        <ul class="menu-itens">
+            <li class="menu-item ativo">
+                <a href="#inicio">
+                    <span class="icone">🏠</span>
+                    <span>Início</span>
+                </a>
+            </li>
+            <li class="menu-item">
+                <a href="#trimestre1">
+                    <span class="icone">📘</span>
+                    <span>1º Trimestre</span>
+                    <span class="badge vazio">Vazio</span>
+                </a>
+            </li>
+            <li class="menu-item">
+                <a href="#trimestre2">
+                    <span class="icone">📗</span>
+                    <span>2º Trimestre</span>
+                    <span class="badge ativo">5 tópicos</span>
+                </a>
+            </li>
+            <li class="menu-item">
+                <a href="#trimestre3">
+                    <span class="icone">📕</span>
+                    <span>3º Trimestre</span>
+                    <span class="badge vazio">Vazio</span>
+                </a>
+            </li>
+        </ul>
+
+        <div class="info-extra">
+            <div class="progresso-semanal">
+                <p>Progresso do Curso</p>
+                <div class="barra-progresso">
+                    <div class="progresso" style="width: 33%"></div>
+                </div>
+                <span>33% concluído (2º Trimestre)</span>
+            </div>
+        </div>
+
+        <div class="redes-sociais">
+            <a href="#" class="social-icon" style="--cor: #0077b5;">📘</a>
+            <a href="#" class="social-icon" style="--cor: #1da1f2;">🐦</a>
+            <a href="#" class="social-icon" style="--cor: #e4405f;">📸</a>
+            <a href="#" class="social-icon" style="--cor: #333;">💻</a>
+        </div>
+
+        <div class="menu-footer">
+            <p>© 2024 - Isaías Manuel</p>
+            <p class="assinatura">Desenvolvido com 💙</p>
+        </div>
+    </nav>
+
+    <!-- Conteúdo Principal -->
+    <main class="conteudo">
+        <!-- Seção Início -->
+        <section id="inicio" class="secao secao-inicio">
+            <div class="hero">
+                <h1 class="titulo-hero">
+                    <span class="saudacao">Olá, eu sou</span>
+                    <span class="gradient-text">Isaías Manuel</span>
+                </h1>
+                <p class="subtitulo-hero">Bem-vindo ao meu microsite de aprendizado CSS</p>
+                <p class="descricao-hero">Explore meu progresso no 2º trimestre - Onde a mágica acontece!</p>
+                
+                <div class="estatisticas">
+                    <div class="stat-card">
+                        <span class="stat-numero">5</span>
+                        <span class="stat-label">Tópicos</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-numero">1</span>
+                        <span class="stat-label">Trimestre Ativo</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-numero">100+</span>
+                        <span class="stat-label">Linhas de código</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cards-trimestres">
+                <div class="card-trimestre trimestre-vazio">
+                    <div class="card-header">
+                        <span class="trimestre-icone">📘</span>
+                        <h3>1º Trimestre</h3>
+                    </div>
+                    <div class="card-body">
+                        <p>Em breve</p>
+                        <div class="mensagem-vazia">
+                            <span class="emoji-vazio">🔜</span>
+                            <span>Conteúdo sendo preparado</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-trimestre trimestre-destaque" onclick="location.href='#trimestre2'">
+                    <div class="card-header">
+                        <span class="trimestre-icone">📗</span>
+                        <h3>2º Trimestre</h3>
+                        <span class="badge-destaque">Ativo</span>
+                    </div>
+                    <div class="card-body">
+                        <p>CSS Avançado - 5 tópicos</p>
+                        <div class="previa-topicos">
+                            <span>T1: Box Model</span>
+                            <span>T2: Seletores</span>
+                            <span>T3: Listas</span>
+                            <span>T4: Sidebar</span>
+                            <span>T5: Projeto</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-trimestre trimestre-vazio">
+                    <div class="card-header">
+                        <span class="trimestre-icone">📕</span>
+                        <h3>3º Trimestre</h3>
+                    </div>
+                    <div class="card-body">
+                        <p>Em breve</p>
+                        <div class="mensagem-vazia">
+                            <span class="emoji-vazio">🔜</span>
+                            <span>Conteúdo sendo preparado</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mensagem-personalizada">
+                <p>💡 Atualmente focado no <strong>2º Trimestre</strong> - Aprendendo CSS na prática!</p>
+            </div>
+        </section>
+
+        <!-- 1º TRIMESTRE (VAZIO) -->
+        <section id="trimestre1" class="secao trimestre trimestre-vazio-secao">
+            <h2 class="titulo-trimestre">
+                <span class="trimestre-icon">📘</span>
+                1º Trimestre - Fundamentos
+                <span class="status-badge vazio">Vazio</span>
+            </h2>
+            
+            <div class="conteudo-vazio">
+                <div class="ilustracao-vazia">
+                    <span class="emoji-grande">📚</span>
+                    <h3>Nada aqui por enquanto</h3>
+                    <p>O conteúdo do 1º trimestre está sendo preparado com muito carinho</p>
+                    <div class="sugestoes">
+                        <span>Enquanto isso, explore o 2º trimestre</span>
+                        <a href="#trimestre2" class="btn-sugestao">Ir para 2º Trimestre →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2º TRIMESTRE (PREECHIDO) -->
+        <section id="trimestre2" class="secao trimestre">
+            <div class="cabecalho-trimestre-destaque">
+                <h2 class="titulo-trimestre">
+                    <span class="trimestre-icon">📗</span>
+                    2º Trimestre - CSS Avançado
+                </h2>
+                <p class="descricao-trimestre">Por: <strong>Isaías Manuel</strong> - Dominando os conceitos fundamentais do CSS</p>
+            </div>
+            
+            <div class="topicos-grid">
+                <!-- T1 - Matéria Básica do CSS -->
+                <div class="topico-card" id="t2-1">
+                    <div class="topico-header">
+                        <span class="topico-numero">T1</span>
+                        <h3>Matéria Básica do CSS</h3>
+                    </div>
+                    <div class="topico-conteudo">
+                        <p class="topico-descricao">Aprenda os fundamentos essenciais do CSS: Box Model, Display e Position</p>
+                        
+                        <div class="conceitos-chave">
+                            <span class="tag">Box Model</span>
+                            <span class="tag">Display</span>
+                            <span class="tag">Position</span>
+                            <span class="tag">Margin</span>
+                            <span class="tag">Padding</span>
+                        </div>
+
+                        <div class="exemplo-codigo">
+                            <div class="codigo-header">
+                                <span>style.css - por Isaías</span>
+                                <button class="btn-copiar" onclick="copiarCodigo(this)">📋 Copiar</button>
+                            </div>
+                            <pre><code>/* Box Model */
+.box {
+    width: 200px;
+    height: 100px;
+    margin: 20px;
+    padding: 15px;
+    border: 3px solid #667eea;
+}
+
+/* Display */
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Position */
+.relative {
+    position: relative;
+    top: 10px;
+    left: 20px;
+}</code></pre>
+                        </div>
+
+                        <div class="box-model-demo">
+                            <div class="box-demo margin">
+                                Margin
+                                <div class="box-demo border">
+                                    Border
+                                    <div class="box-demo padding">
+                                        Padding
+                                        <div class="box-demo content">
+                                            Content
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- T2 - Sintaxe Básica e Seletores -->
+                <div class="topico-card" id="t2-2">
+                    <div class="topico-header">
+                        <span class="topico-numero">T2</span>
+                        <h3>Sintaxe Básica e Seletores</h3>
+                    </div>
+                    <div class="topico-conteudo">
+                        <p class="topico-descricao">Domine os diferentes tipos de seletores e a sintaxe correta do CSS</p>
+                        
+                        <div class="conceitos-chave">
+                            <span class="tag">Elementos</span>
+                            <span class="tag">Classes</span>
+                            <span class="tag">IDs</span>
+                            <span class="tag">Atributos</span>
+                            <span class="tag">Pseudo-classes</span>
+                        </div>
+
+                        <div class="exemplo-codigo">
+                            <div class="codigo-header">
+                                <span>style.css</span>
+                                <button class="btn-copiar" onclick="copiarCodigo(this)">📋 Copiar</button>
+                            </div>
+                            <pre><code>/* Seletor de elemento */
+p {
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Seletor de classe */
+.destaque {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+}
+
+/* Seletor de ID */
+#cabecalho {
+    background: #f8f9fa;
+    padding: 20px;
+}
+
+/* Seletor de atributo */
+input[type="text"] {
+    border: 2px solid #667eea;
+    border-radius: 5px;
+}
+
+/* Pseudo-classes */
+li:nth-child(odd) {
+    background-color: #f0f0f0;
+}
+
+li:hover {
+    transform: translateX(5px);
+    transition: transform 0.3s;
+}</code></pre>
+                        </div>
+
+                        <div class="seletores-demo">
+                            <p class="demo-elemento">Este é um parágrafo comum</p>
+                            <p class="demo-elemento destaque">Este tem a classe .destaque</p>
+                            <p id="demo-id">Este tem o ID #demo-id</p>
+                            <input type="text" placeholder="Input com seletor de atributo">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- T3 - Listas Ordenadas em CSS -->
+                <div class="topico-card" id="t2-3">
+                    <div class="topico-header">
+                        <span class="topico-numero">T3</span>
+                        <h3>Listas Ordenadas Personalizadas</h3>
+                    </div>
+                    <div class="topico-conteudo">
+                        <p class="topico-descricao">Crie listas ordenadas estilizadas com contadores CSS e marcadores personalizados</p>
+                        
+                        <div class="conceitos-chave">
+                            <span class="tag">list-style</span>
+                            <span class="tag">counter-reset</span>
+                            <span class="tag">counter-increment</span>
+                            <span class="tag">::before</span>
+                        </div>
+
+                        <div class="exemplo-codigo">
+                            <div class="codigo-header">
+                                <span>style.css</span>
+                                <button class="btn-copiar" onclick="copiarCodigo(this)">📋 Copiar</button>
+                            </div>
+                            <pre><code>/* Lista com contador personalizado */
+.lista-personalizada {
+    counter-reset: item;
+    list-style: none;
+    padding: 0;
+}
+
+.lista-personalizada li {
+    counter-increment: item;
+    margin-bottom: 15px;
+    padding: 10px 15px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    transition: all 0.3s;
+}
+
+.lista-personalizada li::before {
+    content: "📌 " counter(item) ". ";
+    color: #667eea;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.lista-personalizada li:hover {
+    background: #e9ecef;
+    transform: translateX(5px);
+}</code></pre>
+                        </div>
+
+                        <div class="lista-demo">
+                            <h4>Meus objetivos no CSS:</h4>
+                            <ol class="lista-personalizada-demo">
+                                <li>Estudar seletores CSS</li>
+                                <li>Praticar Box Model</li>
+                                <li>Criar projetos com Flexbox</li>
+                                <li>Dominar CSS Grid</li>
+                                <li>Desenvolver sidebars responsivas</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- T4 - Sidebar Menu Básico -->
+                <div class="topico-card" id="t2-4">
+                    <div class="topico-header">
+                        <span class="topico-numero">T4</span>
+                        <h3>Sidebar Menu Básico</h3>
+                    </div>
+                    <div class="topico-conteudo">
+                        <p class="topico-descricao">Crie um menu lateral simples mas funcional com HTML e CSS</p>
+                        
+                        <div class="conceitos-chave">
+                            <span class="tag">width: 250px</span>
+                            <span class="tag">position: fixed</span>
+                            <span class="tag">flex-direction</span>
+                            <span class="tag">hover effects</span>
+                        </div>
+
+                        <div class="sidebar-demo-container">
+                            <div class="sidebar-basica-demo">
+                                <div class="sidebar-header-demo">
+                                    <h4>📱 Menu do Isaías</h4>
+                                </div>
+                                <ul class="sidebar-menu-demo">
+                                    <li class="active"><a href="#">🏠 Início</a></li>
+                                    <li><a href="#">👤 Sobre</a></li>
+                                    <li><a href="#">📊 Projetos</a></li>
+                                    <li><a href="#">⚙️ Estudos</a></li>
+                                    <li><a href="#">📞 Contato</a></li>
+                                </ul>
+                                <div class="sidebar-footer-demo">
+                                    <p>Isaías Manuel - v1.0</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="exemplo-codigo">
+                            <div class="codigo-header">
+                                <span>Código da Sidebar Básica</span>
+                                <button class="btn-copiar" onclick="copiarCodigo(this)">📋 Copiar</button>
+                            </div>
+                            <pre><code>&lt;!-- HTML --&gt;
+&lt;div class="sidebar"&gt;
+    &lt;h3&gt;Menu&lt;/h3&gt;
+    &lt;ul&gt;
+        &lt;li&gt;&lt;a href="#"&gt;Início&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#"&gt;Sobre&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#"&gt;Serviços&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;!-- CSS --&gt;
+.sidebar {
+    width: 250px;
+    background: #2c3e50;
+    color: white;
+    padding: 20px;
+    position: fixed;
+    height: 100vh;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li a {
+    color: #ecf0f1;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar li a:hover {
+    background: #34495e;
+    padding-left: 20px;
+}</code></pre>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- T5 - Sidebar Completa -->
+                <div class="topico-card destaque" id="t2-5">
+                    <div class="topico-header">
+                        <span class="topico-numero">T5</span>
+                        <h3>Sidebar Completa com Componentes</h3>
+                        <span class="badge-projeto">PROJETO FINAL</span>
+                    </div>
+                    <div class="topico-conteudo">
+                        <p class="topico-descricao">Sidebar profissional com todos os componentes: perfil, busca, menus aninhados, widgets e muito mais</p>
+                        
+                        <div class="conceitos-chave">
+                            <span class="tag">Componentes</span>
+                            <span class="tag">Flexbox</span>
+                            <span class="tag">Animações</span>
+                            <span class="tag">Responsivo</span>
+                            <span class="tag">Moderno</span>
+                        </div>
+
+                        <!-- Sidebar Completa Demonstração -->
+                        <div class="sidebar-final-demo">
+                            <div class="sidebar-final">
+                                <div class="sidebar-final-header">
+                                    <div class="logo">
+                                        <span class="logo-icon">🎨</span>
+                                        <span>Isaías CSS</span>
+                                    </div>
+                                    <button class="btn-notificacao">
+                                        <span class="notificacao">🔔</span>
+                                        <span class="badge">3</span>
+                                    </button>
+                                </div>
+                                
+                                <div class="profile-card">
+                                    <div class="profile-img-container">
+                                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='45' fill='%23667eea'/%3E%3Ccircle cx='50' cy='35' r='15' fill='%23ffffff'/%3E%3Ccircle cx='35' cy='30' r='3' fill='%23333'/%3E%3Ccircle cx='65' cy='30' r='3' fill='%23333'/%3E%3Cpath d='M35 50 Q50 65, 65 50' stroke='%23ffffff' stroke-width='4' fill='none'/%3E%3C/svg%3E" 
+                                             alt="Profile" 
+                                             class="profile-img">
+                                        <span class="status-indicator"></span>
+                                    </div>
+                                    <div class="profile-info">
+                                        <h4>Isaías Manuel</h4>
+                                        <p>isaias.manuel@email.com</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="search-wrapper">
+                                    <input type="text" placeholder="Buscar..." class="search-input" value="CSS">
+                                    <span class="search-icon">🔍</span>
+                                </div>
+                                
+                                <nav class="main-nav">
+                                    <div class="nav-section">
+                                        <h5>Principal</h5>
+                                        <ul>
+                                            <li class="active">
+                                                <a href="#">
+                                                    <span class="nav-icon">📊</span>
+                                                    <span>Dashboard</span>
+                                                    <span class="nav-badge">9+</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <span class="nav-icon">📈</span>
+                                                    <span>Análises</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <span class="nav-icon">📧</span>
+                                                    <span>Mensagens</span>
+                                                    <span class="nav-badge">3</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    
+                                    <div class="nav-section">
+                                        <h5>Projetos</h5>
+                                        <ul>
+                                            <li>
+                                                <a href="#">
+                                                    <span class="nav-icon">📱</span>
+                                                    <span>App Mobile</span>
+                                                    <span class="progress-indicator">75%</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <span class="nav-icon">💻</span>
+                                                    <span>Site Web</span>
+                                                    <span class="progress-indicator">100%</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    
+                                    <div class="nav-section">
+                                        <h5>Configurações</h5>
+                                        <ul>
+                                            <li>
+                                                <a href="#">
+                                                    <span class="nav-icon">👤</span>
+                                                    <span>Perfil</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <span class="nav-icon">⚙️</span>
+                                                    <span>Preferências</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </nav>
+                                
+                                <div class="widgets-area">
+                                    <div class="widget storage-widget">
+                                        <h5>Armazenamento</h5>
+                                        <div class="storage-bar">
+                                            <div class="storage-used" style="width: 65%"></div>
+                                        </div>
+                                        <div class="storage-stats">
+                                            <span>65% usado</span>
+                                            <span>13.5 GB / 20 GB</span>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="widget tasks-widget">
+                                        <h5>Tarefas de CSS</h5>
+                                        <div class="task-item">
+                                            <input type="checkbox" id="task1" checked>
+                                            <label for="task1">Estudar seletores</label>
+                                        </div>
+                                        <div class="task-item">
+                                            <input type="checkbox" id="task2">
+                                            <label for="task2">Praticar Flexbox</label>
+                                        </div>
+                                        <div class="task-item">
+                                            <input type="checkbox" id="task3">
+                                            <label for="task3">Criar sidebar</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="sidebar-footer-completo">
+                                    <div class="user-status">
+                                        <span class="status-dot"></span>
+                                        <span>Online - Estudando</span>
+                                    </div>
+                                    <button class="btn-logout">Sair</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="exemplo-codigo">
+                            <div class="codigo-header">
+                                <span>Sidebar Completa - Projeto de Isaías</span>
+                                <button class="btn-copiar" onclick="copiarCodigo(this)">📋 Copiar</button>
+                            </div>
+                            <pre><code>&lt;!-- Sidebar profissional com todos os componentes --&gt;
+&lt;div class="sidebar"&gt;
+    &lt;!-- Header com logo personalizada --&gt;
+    &lt;div class="sidebar-header"&gt;
+        &lt;div class="logo"&gt;🎨 Isaías CSS&lt;/div&gt;
+        &lt;button class="notifications"&gt;🔔&lt;/button&gt;
+    &lt;/div&gt;
+    
+    &lt;!-- Perfil do usuário --&gt;
+    &lt;div class="profile-card"&gt;
+        &lt;img src="avatar.jpg" alt="Avatar"&gt;
+        &lt;div class="profile-info"&gt;
+            &lt;h4&gt;Isaías Manuel&lt;/h4&gt;
+            &lt;p&gt;isaias@email.com&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    
+    &lt;!-- Barra de pesquisa --&gt;
+    &lt;div class="search-box"&gt;
+        &lt;input type="text" placeholder="Buscar..."&gt;
+        &lt;span&gt;🔍&lt;/span&gt;
+    &lt;/div&gt;
+    
+    &lt;!-- Menu de navegação com categorias --&gt;
+    &lt;nav class="main-nav"&gt;
+        &lt;div class="nav-section"&gt;
+            &lt;h5&gt;Principal&lt;/h5&gt;
+            &lt;ul&gt;
+                &lt;li&gt;&lt;a href="#"&gt;📊 Dashboard&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+    &lt;/nav&gt;
+    
+    &lt;!-- Widgets informativos --&gt;
+    &lt;div class="widgets"&gt;
+        &lt;div class="storage-widget"&gt;
+            &lt;h5&gt;Progresso&lt;/h5&gt;
+            &lt;div class="progress-bar"&gt;
+                &lt;div style="width: 65%"&gt;&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3º TRIMESTRE (VAZIO) -->
+        <section id="trimestre3" class="secao trimestre trimestre-vazio-secao">
+            <h2 class="titulo-trimestre">
+                <span class="trimestre-icon">📕</span>
+                3º Trimestre - Projetos Avançados
+                <span class="status-badge vazio">Em breve</span>
+            </h2>
+            
+            <div class="conteudo-vazio">
+                <div class="ilustracao-vazia">
+                    <span class="emoji-grande">🚀</span>
+                    <h3>Preparando novos conteúdos</h3>
+                    <p>O 3º trimestre trará projetos incríveis e conceitos avançados de CSS</p>
+                    <div class="previa-conteudo">
+                        <h4>O que Isaías vai aprender:</h4>
+                        <ul>
+                            <li>🎯 Animações CSS avançadas</li>
+                            <li>📱 Projetos responsivos completos</li>
+                            <li>⚡ Performance e otimização</li>
+                            <li>🎨 Design Systems com CSS</li>
+                        </ul>
+                    </div>
+                    <div class="sugestoes">
+                        <span>Continue praticando o 2º trimestre!</span>
+                        <a href="#trimestre2" class="btn-sugestao">Revisar 2º Trimestre →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Rodapé do Microsite -->
+        <footer class="microsite-footer">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h4>Isaías Manuel</h4>
+                    <p>Desenvolvedor Front-end em formação</p>
+                    <p>📧 isaias.manuel@email.com</p>
+                </div>
+                <div class="footer-nav">
+                    <a href="#inicio">Início</a>
+                    <a href="#trimestre2">2º Trimestre</a>
+                    <a href="#">Projetos</a>
+                </div>
+                <div class="footer-copyright">
+                    <p>© 2024 - Microsite pessoal de Isaías Manuel</p>
+                    <p class="construido">Construído com HTML, CSS e 💙</p>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <!-- Navegação Flutuante -->
+    <div class="navegacao-flutuante">
+        <button class="nav-flutuante-btn" onclick="mostrarNavegacao()">
+            <span>📚</span>
+            <small>Isaías</small>
+        </button>
+        <div class="nav-flutuante-menu" id="navMenu">
+            <a href="#t2-1" class="nav-flutuante-item">T2.1</a>
+            <a href="#t2-2" class="nav-flutuante-item">T2.2</a>
+            <a href="#t2-3" class="nav-flutuante-item">T2.3</a>
+            <a href="#t2-4" class="nav-flutuante-item">T2.4</a>
+            <a href="#t2-5" class="nav-flutuante-item destaque">T2.5</a>
+        </div>
+    </div>
+
+    <script>
+        function copiarCodigo(botao) {
+            const codigo = botao.closest('.exemplo-codigo').querySelector('code').innerText;
+            navigator.clipboard.writeText(codigo);
+            const textoOriginal = botao.textContent;
+            botao.textContent = '✅ Copiado!';
+            setTimeout(() => {
+                botao.textContent = textoOriginal;
+            }, 2000);
+        }
+
+        function mostrarNavegacao() {
+            document.getElementById('navMenu').classList.toggle('mostrar');
+        }
+
+        // Fechar menu ao clicar fora
+        document.addEventListener('click', function(event) {
+            const navMenu = document.getElementById('navMenu');
+            const navBtn = document.querySelector('.nav-flutuante-btn');
+            
+            if (!navBtn.contains(event.target) && !navMenu.contains(event.target)) {
+                navMenu.classList.remove('mostrar');
+            }
+        });
+    </script>
+</body>
+</html>
+```
+
+CSS (style.css) - Adições Específicas para o Microsite
+
+```css
+/* Adicione estas regras ao final do seu CSS existente */
+
+/* Efeito de Partículas para o Microsite */
+.particulas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.particula {
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    animation: flutuar 15s linear infinite;
+    animation-delay: calc(var(--i) * -2s);
+    top: calc(var(--i) * 10%);
+    left: calc(var(--i) * 10%);
+}
+
+@keyframes flutuar {
+    0% {
+        transform: translateY(100vh) scale(1);
+        opacity: 0;
+    }
+    10% {
+        opacity: 0.5;
+    }
+    90% {
+        opacity: 0.5;
+    }
+    100% {
+        transform: translateY(-100vh) scale(0.5);
+        opacity: 0;
+    }
+}
+
+/* Estilos personalizados para Isaías Manuel */
+.perfil h3 {
+    color: var(--text-dark);
+    font-size: 1.3rem;
+    margin-bottom: 5px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.cargo {
+    color: var(--accent-color);
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.localizacao {
+    color: var(--text-gray);
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.menu-footer .assinatura {
+    color: var(--accent-color);
+    font-size: 0.7rem;
+    margin-top: 5px;
+    font-style: italic;
+}
+
+/* Hero personalizado */
+.saudacao {
+    display: block;
+    font-size: 1.5rem;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 10px;
+    font-weight: normal;
+}
+
+.titulo-hero .gradient-text {
+    font-size: 3.5rem;
+    display: block;
+}
+
+.descricao-hero {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1.1rem;
+    margin-top: 10px;
+}
+
+/* Mensagem personalizada */
+.mensagem-personalizada {
+    text-align: center;
+    margin-top: 30px;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 50px;
+    color: white;
+    font-size: 1.1rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mensagem-personalizada strong {
+    color: #ffd700;
+    font-weight: 600;
+}
+
+/* Rodapé do Microsite */
+.microsite-footer {
+    margin-top: 80px;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    border-radius: 30px 30px 0 0;
+    padding: 40px;
+    color: white;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-info h4 {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    background: var(--primary-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.footer-info p {
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+}
+
+.footer-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-nav a {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    transition: all 0.3s;
+    font-size: 0.95rem;
+}
+
+.footer-nav a:hover {
+    color: white;
+    transform: translateX(5px);
+}
+
+.footer-copyright {
+    text-align: right;
+}
+
+.footer-copyright p {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+}
+
+.construido {
+    color: var(--accent-color);
+    font-size: 0.8rem !important;
+    font-style: italic;
+}
+
+/* Navegação Flutuante personalizada */
+.nav-flutuante-btn {
+    width: 70px;
+    height: 70px;
+    background: var(--primary-gradient);
+    border: none;
+    border-radius: 50%;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    box-shadow: var(--shadow-lg);
+    transition: all 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+}
+
+.nav-flutuante-btn small {
+    font-size: 0.6rem;
+    margin-top: 2px;
+    opacity: 0.9;
+}
+
+.nav-flutuante-btn:hover {
+    transform: scale(1.1) rotate(5deg);
+}
+
+/* Cards de tópicos com assinatura */
+.topico-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.topico-card::after {
+    content: 'IM';
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 0.7rem;
+    color: rgba(102, 126, 234, 0.2);
+    font-weight: bold;
+    pointer-events: none;
+}
+
+.topico-card.destaque::after {
+    content: 'Isaías Manuel';
+    color: rgba(255, 255, 255, 0.3);
+    font-size: 0.8rem;
+}
+
+/* Badges personalizados */
+.badge.ativo {
+    background: var(--primary-gradient);
+    color: white;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(102, 126, 234, 0.7);
+    }
+    70% {
+        box-shadow: 0 0 0 5px rgba(102, 126, 234, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(102, 126, 234, 0);
+    }
+}
+
+/* Sidebar final com nome personalizado */
+.sidebar-final .logo span:last-child {
+    background: var(--primary-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: bold;
+}
+
+/* Responsividade para o footer */
+@media (max-width: 768px) {
+    .footer-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 20px;
+    }
+    
+    .footer-copyright {
+        text-align: center;
+    }
+    
+    .footer-nav {
+        align-items: center;
+    }
+    
+    .footer-nav a:hover {
+        transform: translateY(-3px);
+    }
+    
+    .titulo-hero .gradient-text {
+        font-size: 2.5rem;
+    }
+    
+    .mensagem-personalizada {
+        font-size: 0.9rem;
+        padding: 12px;
+    }
+}
+
+/* Animações extras */
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero, .cards-trimestres, .mensagem-personalizada {
+    animation: aparecer 1s ease-out;
+}
+
+/* Scrollbar personalizada */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(135deg, #764ba2, #667eea);
+}
+HTML
+
+<div class="tema-switch">
+    <button id="toggle-tema" title="Alternar tema">🌓</button>
+</div>
+// --- 1. Efeito de Digitação no Hero ---
+const textoHero = document.querySelector('.subtitulo-hero');
+const frase = "Bem-vindo ao meu microsite de aprendizado CSS...";
+let i = 0;
+
+function digitar() {
+    if (i < frase.length) {
+        textoHero.textContent += frase.charAt(i);
+        i++;
+        setTimeout(digitar, 50;
+    }
+}
+// Limpa o texto inicial e começa a digitar
+textoHero.textContent = "";
+window.onload = digitar;
+
+// --- 2. Modo Escuro / Claro ---
+const btnTema = document.getElementById('toggle-tema');
+const body = document.body;
+
+btnTema.addEventListener('click', () => {
+    body.classList.toggle('light-mode');
+    const isLight = body.classList.contains('light-mode');
+    btnTema.textContent = isLight ? "🌙" : "☀️";
+    
+    // Feedback visual no botão
+    btnTema.style.transform = "scale(1.2)";
+    setTimeout(() => btnTema.style.transform = "scale(1)", 200);
+});
+
+// --- 3. Revelar ao Rolar (Scroll Reveal) ---
+const observarScroll = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('visivel');
+        }
+    });
+}, { threshold: 0.1 });
+
+// Seleciona todos os cards e seções para animar
+document.querySelectorAll('.topico-card, .stat-card, .secao').forEach(el => {
+    el.classList.add('scroll-animar');
+    observarScroll.observe(el);
+});
+3. Ajustes no CSS (style.css)
+Adicione estes estilos para suportar as novas funções:
+
+CSS
+
+/* Efeito de Revelação no Scroll */
+.scroll-animar {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease-out;
+}
+
+.scroll-animar.visivel {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Estilos para o Light Mode */
+body.light-mode {
+    background: #f0f2f5;
+    color: #1a1a1a;
+}
+
+body.light-mode .conteudo {
+    background: #ffffff;
+}
+
+body.light-mode .topico-card {
+    background: #f8f9fa;
+    border: 1px solid #ddd;
+    color: #333;
+}
+
+/* Botão de Alternar Tema */
+.tema-switch {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+#toggle-tema {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#toggle-tema:hover {
+    background: var(--primary-gradient);
+}
